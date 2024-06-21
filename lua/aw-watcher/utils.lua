@@ -2,7 +2,7 @@ local has_notify, notify = pcall(require, "notify")
 local M = {}
 
 function M.get_username()
-  return os.getenv("USERNAME"):upper() -- other aw watchers capitalize this too...
+  return os.getenv("HOST"):upper() -- using host as username is a custom field
 end
 
 function M.get_timestamp()
